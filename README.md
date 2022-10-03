@@ -144,3 +144,10 @@ Canonical URLs are generated automatically.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hasura/gatsby-gitbook-starter)
 
+## Extra Config
+node: v18
+npm: latest
+extra modules
+- gatsby-remark-graph
+- gatsby-remark-line-breaks
+- gatsby-remark-relative-source

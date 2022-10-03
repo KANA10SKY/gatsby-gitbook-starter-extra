@@ -4,6 +4,7 @@ const config = require("./config");
 const plugins = [
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
+  //'gatsby-plugin-catch-links',
   {
     resolve: `gatsby-plugin-layout`,
     options: {
@@ -23,6 +24,7 @@ const plugins = [
     resolve: 'gatsby-plugin-mdx',
     options: {
       gatsbyRemarkPlugins: [
+        //"gatsby-remark-relative-source",
         {
           resolve: "gatsby-remark-images",
           options: {
@@ -30,6 +32,8 @@ const plugins = [
             sizeByPixelDensity: true
           }
         },
+        "gatsby-remark-graph",
+        "gatsby-remark-line-breaks",
         {
           resolve: 'gatsby-remark-copy-linked-files'
         }
